@@ -18,11 +18,11 @@ Insights and recommendations are provided in the following areas:
 
 PowerBI Dashboard **[Link](https://www.google.com)**
 
-SQL query for inspecting and checking values **[Link](https://www.google.com)**
+SQL query for inspecting and checking values **[Link](https://github.com/amirulshafiq98/olist-sales/blob/main/pre-checks.sql)**
 
-SQL query for importing and creating tables  **[Link](https://www.google.com)**
+SQL query for importing and creating tables  **[Link](https://github.com/amirulshafiq98/olist-sales/blob/main/clean-up.sql)**
 
-SQL query for checking and dashboard preparation **[Link](https://www.google.com)**
+SQL query for checking and dashboard preparation **[Link](https://github.com/amirulshafiq98/olist-sales/blob/main/preparation.sql)**
 
 
 
@@ -31,7 +31,7 @@ Olist's database structure is as seen below which compromises of 7 tables: custo
 
 ![Schema](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-Prior to the analysis, the product table was translated using excel with the translation file using vlookup. SQL query for inspecting and checking values can be downloaded [here](https://www.google.com)
+Prior to the analysis, the product table was translated using excel with the translation file using vlookup. SQL query for inspecting and checking values can be viewed [here](https://github.com/amirulshafiq98/olist-sales/blob/main/pre-checks.sql)
 
 
 
