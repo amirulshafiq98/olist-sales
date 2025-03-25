@@ -16,7 +16,7 @@ Insights and recommendations are provided in the following areas:
 
 - **Average Review Score**: Provide insights on how a product is rated relative to the average
 
-PowerBI Dashboard **[Link](https://www.google.com)**
+PowerBI Dashboard **[Link](https://app.powerbi.com/groups/me/reports/16c25ee2-af2d-420d-8fd8-f38a70c2527e/6f057ff21ea215d7744b?bookmarkGuid=fd0dae6e-dda3-4c68-b6ca-b77d23efe81d&bookmarkUsage=1&ctid=64991f7f-44d6-4d8c-9cd4-7862e8cb94c6&portalSessionId=84624b91-0ac2-4715-aa20-f26558ed5bf7&fromEntryPoint=export)**
 
 SQL query for inspecting and checking values **[Link](https://github.com/amirulshafiq98/olist-sales/blob/main/pre-checks.sql)**
 
@@ -29,7 +29,7 @@ SQL query for checking and dashboard preparation **[Link](https://github.com/ami
 # Data Structure
 Olist's database structure is as seen below which compromises of 7 tables: customers, reviews, payments, sellers, orders, order items, products
 
-![Schema](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Olist E-commerce Schema](https://github.com/user-attachments/assets/a400450b-c739-40a5-8598-6fa7e8a2a1c4)
 
 Prior to the analysis, the product table was translated using excel with the translation file using vlookup. SQL query for inspecting and checking values can be viewed [here](https://github.com/amirulshafiq98/olist-sales/blob/main/pre-checks.sql)
 
@@ -41,53 +41,69 @@ As the data for 2016 only started from October, majority of this report will cov
 
 The total sales generated saw a YoY increased from 2017 to 2018 of 23% while voucher claims increased by 9%. AOV and total orders increased by 2% and 21% YoY from 2017 to 2018 respectively. Total sales from October 2017 saw a R$700,000 increase from October 2016 with a 14x increase in total orders across all product categories. The most ordered product category in both 2017 and 2018 was bed bath tables which saw a YoY increase in sales of 11%. The average review score for each of the products sold was 4/5 across all months. The following sections will cover in greater detail other contributing factors and highlight key areas for improvement. 
 
-Below is an overview of the dashboard in PowerBI that can be downloaded **[here](https://www.google.com)**
+Below is an overview of the dashboard in PowerBI that can be downloaded **[here](https://app.powerbi.com/groups/me/reports/16c25ee2-af2d-420d-8fd8-f38a70c2527e/6f057ff21ea215d7744b?bookmarkGuid=fd0dae6e-dda3-4c68-b6ca-b77d23efe81d&bookmarkUsage=1&ctid=64991f7f-44d6-4d8c-9cd4-7862e8cb94c6&portalSessionId=84624b91-0ac2-4715-aa20-f26558ed5bf7&fromEntryPoint=export)**
 
-![Overview](https://github.com/user-attachments/assets/de35f378-7d64-4a90-ae87-8e9740a26410)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f0ee2e61-0477-466a-88db-105410593c69">
+</p>
 
 #### Sales Trends:
-- The total sales generated saw a YoY increased from 2017 to 2018 of 23%
-- The average sales per month was 63% higher in 2018 (R$956,000) compared to 2017 (R$584,000)
-- The total amount of orders of bed bath tables in the whole of 2018 (6,275) surpassed the total in 2017 (5,571) by 13%
-- Average MoM growth was +24% in 2017 which was higher than 2018 at -13%
-- Voucher claims increased by 9%, AOV increased by 2% while total orders increased by 21% YoY from 2017 to 2018
-- Total sales from October 2017 saw a R$700,000 increase from October 2016 with a 14x increase in total orders 
-- 2017 saw mostly increased sales MoM, despite seeing the highest decrease of -25% in December where it should have been one of the highest as it was the holiday season
+- Total sales grew 23% YoY from 2017 to 2018, indicating a strong upward trend going into Q4 of 2018
+- The average monthly sales in 2018 (R$956,000) were 63% higher compared to 2017 (R$584,000), suggesting sustained growth throughout the year
+- The total number of orders for the bed & bath category increased by 13% YoY, reaching 6,275 in 2018 compared to 5,571 in 2017, highlighting the category’s continued demand
+- Total sales in October 2017 rose by R$700,000 from October 2016, with a 14x surge in orders, likely driven by expanded product offerings, more sellers, and increased platform visibility. The pre-holiday shopping season may have also boosted demand.
+- Despite steady MoM growth in 2017, December saw a -25% drop, possibly due to early holiday discounts in November (e.g., Black Friday) pulling sales forward. Logistical delays or stock shortages from increased November demand may have further slowed December sales.
 
-![Sales Trends](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e97f8447-2480-4d90-aa74-b1b0b6e1e96b">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/09e4bc93-4784-4ecb-90dd-bf397aacee9d">
+</p>
 
 #### Top Sellers on the Platform:
-- The most active seller in 2017 accounted for 2% of all orders accounting for R$88,000 in sales before seeing a 54% decrease (R$39,000) in the following year
-- The second most active seller in 2017 was still in the top 10 most active sellers in 2018 but did see a decrease in sales of 40% YoY
-- The top seller in 2018 increased their sales by 6x compared to the previous year despite averaging a MoM growth of 145% in 2017
-- Three sellers by August 2018 managed over 1000 orders which matches the highest order record in 2017
-- Only 1 seller each in 2017 and 2018 was in the top 3 for most orders and sales in their respective years
+- The most active seller in 2017 generated R$88,000 in sales (2% of all orders) but saw a 54% decline in 2018 (R$39,000), indicating a shift in market dynamics or competition
+- The second most active seller in 2017 remained in the top 10 in 2018 despite a 40% decline in YoY sales, suggesting some level of resilience
+- The top seller of 2018 saw a 6x sales increase compared to 2017, demonstrating rapid business expansion despite already averaging 145% MoM growth in 2017
+- By August 2018, three sellers surpassed 1,000 orders, matching the highest order volume achieved by any seller in 2017
+- Only one seller was in the top three for both 2017 and 2018, showing that top sellers frequently changed between years
+- The average MoM growth in 2017 (+24%) was significantly higher than in 2018 (-13%), indicating possible market saturation or increased competition
+- Voucher claims increased by 9%, AOV rose by 2%, and total orders grew by 21% YoY, suggesting that sales growth was partially driven by promotional strategies
 
-![Top Sellers](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/be0d0b05-f16d-40de-a5de-d79d158d35a1" hspace="10">
+    <img src="https://github.com/user-attachments/assets/06ef662c-d328-46a3-bec0-e617a4d48def" hspace="10">
+</p>
 
 #### Top Selling Products:
-- Bed bath tables as a category had the most amount of orders in 2017 generating R$604,000 which was improved upon in 2018 with an increase of 11% (R$672,000)
-- The top selling product in 2017 reached a high of R$28,000 sales in September with no sales being done in 2018
-- The most ordered product in 2017 had 145 orders in Q2 generating R$13,000 which is the same as the the total revenue generated by the product in 2018 between January to August
-- The top selling product in 2018 increased its sales from the previous year by 4x (R$13,000 - R$53,000) 
-- The most ordered product in 2018 saw over 100 orders in January with a total revenue of R$34,000, seeing a 3x increase from 2017
-- Despite health & beauty products having the second most amount of orders in 2018, only three products were in the top 10 with only 1 having at least 200 orders in the same year
+- Bed & bath remained the top category, generating R$604,000 in 2017 and growing by 11% (R$672,000) in 2018
+- The top-selling product in 2017 peaked at R$28,000 in sales in September but had zero sales in 2018, indicating a potential product discontinuation or shift in consumer preferences
+- The most ordered product in 2017 had 145 orders in Q2, generating R$13,000, which was the same revenue it generated in all of 2018 (January–August), highlighting a loss in momentum
+- The best-selling product in 2018 saw a 4x increase in sales, rising from R$13,000 in 2017 to R$53,000 in 2018
+- The most ordered product in 2018 surpassed 100 orders in January alone, generating R$34,000, representing a 3x increase compared to 2017
+- Despite health & beauty ranking as the second-highest category in orders, only three products made it into the top 10, with just one surpassing 200 orders, suggesting that sales were more fragmented across different SKUs
 
-![Top Products](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/b2e6768a-c83e-431c-9a56-6e36568a63f0" hspace="10">
+    <img src="https://github.com/user-attachments/assets/6454d079-67f5-41ed-99fa-eb149f978d20" hspace="10">
+</p>
 
 #### Average Review Score:
-- All of the top 10 sellers in 2017 had a review rating of 4 or higher for their products
-- Only 1 product in the top 10 most sold had a rating below 3.5 in 2017
-- The top 10 sellers in 2018 had at least a 4 star rating with only 1 product in the top 10 having below a 4 star rating (2.5)
+- All top 10 sellers in 2017 maintained a 4-star rating or higher for their products
+- Only one product in 2017 was top 10 and had a rating below 3.5, indicating that higher-rated products were generally more successful
+- The top 10 sellers in 2018 also maintained at least a 4-star rating, with just one top-selling product rated below 4 (2.5 stars)
+- A preliminary analysis suggests that products rated above 4.5 tend to have more consistent sales, while those below 3.5 see significantly lower order volumes. However, niche products with lower ratings may still perform well if competition is limited
 
-![Average Score](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/580fc619-4fd6-4cb7-9718-a257ae3aa9e4">
+</p>
 
 # Recommendations
-- Increase visibility of products that were ordered the most from the month prior to the landing page on the website to generate more sales
-- Since most products were rated at least 4 stars, providing an option for customers to compare products wihin the same category would allow them to make informed decisions
-- As 2018 saw MoM growth be within +-5%, re-evaluating marketing methods by incorporating loyalty programs, free shipping and volume discounts could increase sales to avoid a possible downturn as seen in December 2017 (-25% MoM growth)
-- Increasing diversity of options in certain product categories would allow to better serve customer needs as some product categories like furniture decor have 1 product that is being purchased overwhelmingly more than the others despite other products having better reviews
-- As AOV only saw a 2% increase from 2017 to 2018, strategies like incentivising larger purchases and cross-selling by suggesting complimentary items should be considered
+- **Enhance Product Visibility:** Increase the visibility of top-selling products from the previous month on the landing page to capitalise on their popularity and drive additional sales
+- **Product Comparison Features:** Implement a feature allowing customers to compare products within the same category, especially since most products maintain high ratings (4 stars or more). This will help customers make more informed purchasing decisions
+- **Revise Marketing Strategies:** Given the relatively stable MoM growth in 2018 (+/- 5%) and the -25% MoM drop in December 2017, consider re-evaluating marketing strategies. Implementing loyalty programs, free shipping offers, or volume discounts could encourage more consistent sales and mitigate potential downturns
+- **Diversify Product Offerings:** Expand the diversity of products in popular categories like furniture and decor, where some products dominate despite having better-reviewed alternatives. Offering a wider range of options would better cater to varying customer preferences and increase overall sales
+- **Incentivise Larger Purchases:** Given the modest 2% increase in AOV from 2017 to 2018, consider strategies like incentivising larger purchases through discounts or promotions for higher-value orders. Cross-selling complementary items could also boost AOV while enhancing the customer experience
+- **Focus on Niche Products:** Although some lower-rated products still perform well due to limited competition, focusing on niche products with potential for growth and ensuring they receive adequate marketing support could help capture underserved market segments
+- **Optimise Logistics and Stock Management:** Given the unexpected drop in sales in December 2017 due to potential stock shortages or logistical delays, it's essential to streamline inventory management and ensure sufficient stock during peak periods to meet demand and avoid losing out on sales opportunities
